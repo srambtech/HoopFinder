@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hoopfinder">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".PermissionActivity"></activity>
+        <activity
+            android:name=".LogoutActivity"
+            android:theme="@style/AppTheme"></activity> <!-- Subscribe to Courts -->
+        <activity
+            android:name=".SubscribeToCourtActivity"
+            android:theme="@style/AppTheme"></activity> <!-- Add Courts -->
+        <activity
+            android:name=".AddCourtActivity"
+            android:theme="@style/AppTheme"></activity> <!-- FIrebase auth -->
+        <activity
+            android:name=".firebaseAuth"
+            android:theme="@style/AppTheme"></activity> <!-- Signup page needs to use auth and add users to a table -->
+        <activity android:name=".SignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <!--<activity android:name=".MainActivity" />-->
+        <activity android:name=".CourtLocationActivity" />
+        <activity android:name=".SubscriberListActivity" />
+        <activity android:name=".StartingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCD47IQU4Fzeot6LGupRLtnRDT3NSEwHhs" />
+
+        <service
+            android:name=".service"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

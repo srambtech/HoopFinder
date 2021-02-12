@@ -1,0 +1,16 @@
+
+HoopFinder/app/google-services.json
+HoopFinder/app/app.iml
+HoopFinder/.gradle
+HoopFinder/local.properties
+HoopFinder/.idea/caches
+HoopFinder/.idea/libraries
+HoopFinder/.idea/modules.xml
+HoopFinder/.idea/workspace.xml
+HoopFinder/.idea/navEditor.xml
+HoopFinder/.idea/assetWizardSettings.xml
+HoopFinder/.idea/*
+**/.DS_Store
+HoopFinder/build
+HoopFinder/captures
+HoopFinder/*.externalNativeBuild
